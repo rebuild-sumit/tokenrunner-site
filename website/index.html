@@ -5,30 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TokenRunner | Crypto accounting from NAV to filed return</title>
 <meta name="description" content="TokenRunner gives crypto businesses a live net asset value from their wallets on EVM, Bitcoin, Hyperliquid, and Solana, and carries it through monthly close to a filed tax return. Free NAV early access.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <style>
   :root {
-    --paper: #fbfbf9;
-    --panel: #f2f2ee;
+    --paper: #faf9f6;
+    --panel: #f1efe9;
     --card: #ffffff;
-    --ink: #0b1b34;
-    --ink-soft: #4b5568;
-    --accent: #1d4ed8;
-    --accent-soft: #e3eafc;
+    --ink: #191a1e;
+    --ink-soft: #55565c;
+    --accent: #96700d;
+    --accent-soft: #f3ead0;
+    --gold: #c9a227;
     --green: #12714b;
     --green-soft: #e2f0e9;
     --amber: #8a5a00;
     --amber-soft: #f5ecd8;
-    --line: #e0e0d8;
-    --nav-bg: rgba(251,251,249,.93);
+    --line: #e2ded2;
+    --nav-bg: rgba(250,249,246,.93);
     --btn-text: #fff;
-    --deep-bg: #0b1b34;
-    --deep-panel: #10233f;
-    --deep-line: #263a5c;
+    --deep-bg: #17181c;
+    --deep-panel: #202127;
+    --deep-line: #33343c;
     --deep-head: #fff;
-    --deep-text: #b6c1d4;
-    --deep-kicker: #8fa3c4;
-    --deep-tag: #7ea2e8;
-    --deep-body: #eef1f6;
+    --deep-text: #b9bac2;
+    --deep-kicker: #8f9098;
+    --deep-tag: #d4af37;
+    --deep-body: #ededf0;
     --mono: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
     --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   }
@@ -40,7 +42,8 @@
   /* ---------- nav ---------- */
   nav { position: sticky; top: 0; background: var(--nav-bg); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); z-index: 10; }
   .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 15px 24px; max-width: 1080px; margin: 0 auto; }
-  .logo { font-family: var(--mono); font-size: 14px; letter-spacing: .16em; font-weight: 700; text-decoration: none; color: var(--ink); }
+  .logo { font-family: var(--mono); font-size: 14px; letter-spacing: .16em; font-weight: 700; text-decoration: none; color: var(--ink); display: flex; align-items: center; gap: 9px; }
+  .logo svg { display: block; flex: none; }
   .logo .tr { color: var(--accent); }
   .nav-links { display: flex; gap: 26px; align-items: center; }
   .nav-links a { text-decoration: none; color: var(--ink-soft); font-size: 14.5px; }
@@ -150,7 +153,7 @@
 
 <nav>
   <div class="nav-inner">
-    <a class="logo" href="#top">TOKEN<span class="tr">RUNNER</span></a>
+    <a class="logo" href="#top"><svg viewBox="0 0 48 48" width="22" height="22" aria-hidden="true"><rect x="5" y="28" width="7.5" height="15" rx="1.5" fill="var(--ink)"/><rect x="16.5" y="20" width="7.5" height="23" rx="1.5" fill="var(--ink)"/><rect x="28" y="12" width="7.5" height="31" rx="1.5" fill="var(--ink)"/><circle cx="41" cy="8.5" r="5.5" fill="var(--gold)"/></svg>TOKEN<span class="tr">RUNNER</span></a>
     <div class="nav-links">
       <a href="#product">Product</a>
       <a href="#chains">Chains</a>
@@ -365,7 +368,7 @@
 
 <footer>
   <div class="wrap foot">
-    <a class="logo" href="#top">TOKEN<span class="tr">RUNNER</span></a>
+    <a class="logo" href="#top"><svg viewBox="0 0 48 48" width="22" height="22" aria-hidden="true"><rect x="5" y="28" width="7.5" height="15" rx="1.5" fill="var(--ink)"/><rect x="16.5" y="20" width="7.5" height="23" rx="1.5" fill="var(--ink)"/><rect x="28" y="12" width="7.5" height="31" rx="1.5" fill="var(--ink)"/><circle cx="41" cy="8.5" r="5.5" fill="var(--gold)"/></svg>TOKEN<span class="tr">RUNNER</span></a>
     <div>NAV · Close · Books &amp; Tax</div>
     <div>© 2026 TokenRunner Inc · tokenrunner.xyz</div>
   </div>
