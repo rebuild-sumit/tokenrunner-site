@@ -59,7 +59,8 @@
   header { padding: 78px 0 72px; border-bottom: 1px solid var(--line); }
   .hero-cols { display: grid; grid-template-columns: 1.05fr .95fr; gap: 56px; align-items: center; }
   @media (max-width: 880px) { .hero-cols { grid-template-columns: 1fr; } }
-  .eyebrow { font-family: var(--mono); font-size: 12.5px; letter-spacing: .18em; color: var(--accent); text-transform: uppercase; margin-bottom: 20px; }
+  .eyebrow { font-family: var(--mono); font-size: 13.5px; color: var(--accent); margin-bottom: 20px; }
+  .eyebrow::before { content: "// "; opacity: .6; }
   h1 { font-size: clamp(34px, 4.6vw, 52px); line-height: 1.1; font-weight: 700; letter-spacing: -.015em; }
   .lede { font-size: 18px; color: var(--ink-soft); margin: 22px 0 30px; max-width: 540px; }
   .lede b { color: var(--ink); }
@@ -79,7 +80,8 @@
 
   /* ---------- sections ---------- */
   section { padding: 84px 0; }
-  .kicker { font-family: var(--mono); font-size: 12.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 14px; }
+  .kicker { font-family: var(--mono); font-size: 13.5px; color: var(--accent); margin-bottom: 14px; }
+  .kicker::before { content: "// "; opacity: .6; }
   h2 { font-size: clamp(26px, 3.4vw, 36px); font-weight: 700; letter-spacing: -.01em; line-height: 1.18; margin-bottom: 16px; }
   .section-lede { font-size: 17px; color: var(--ink-soft); max-width: 640px; }
 
@@ -167,7 +169,7 @@
 <header id="top">
   <div class="wrap hero-cols">
     <div>
-      <div class="eyebrow">Crypto accounting &amp; NAV reporting</div>
+      <div class="eyebrow">crypto accounting &amp; NAV reporting</div>
       <h1>Your crypto books, from NAV to filed return.</h1>
       <p class="lede">TokenRunner turns your wallets into financial statements. A live
       <b>net asset value</b> across EVM, Bitcoin, Hyperliquid, and Solana, carried through
@@ -196,7 +198,7 @@
 
 <section id="whynow">
   <div class="wrap">
-    <div class="kicker">Why now</div>
+    <div class="kicker">why_now</div>
     <h2>The rules changed. Your books have to keep up.</h2>
     <p class="section-lede">Three regulations took effect in 2025–2026 that turned "roughly know
     what we hold" into a compliance problem for every crypto business.</p>
@@ -228,7 +230,7 @@
 
 <section id="product">
   <div class="wrap">
-    <div class="kicker">The ladder</div>
+    <div class="kicker">the_ladder</div>
     <h2>Start free. Upgrade when the books get real.</h2>
     <p class="section-lede">One system, three levels — from a free NAV snapshot to a fully
     delivered set of books and a filed return.</p>
@@ -279,7 +281,7 @@
 
 <section id="chains">
   <div class="wrap">
-    <div class="kicker">Chain coverage</div>
+    <div class="kicker">chain_coverage</div>
     <h2>The chains businesses actually hold.</h2>
     <p class="section-lede">Priority support for the ledgers where company treasuries and trading
     books live — including the ones the incumbents skip.</p>
@@ -303,7 +305,7 @@
 
 <section id="who">
   <div class="wrap">
-    <div class="kicker">Who it's for</div>
+    <div class="kicker">who_its_for</div>
     <h2>Built for crypto businesses, not crypto hobbyists.</h2>
     <div class="who-grid">
       <div class="who"><b>Trading desks &amp; Hyperliquid-native teams</b>
@@ -325,7 +327,7 @@
 
 <section id="about">
   <div class="wrap">
-    <div class="kicker" id="services">About</div>
+    <div class="kicker" id="services">about</div>
     <h2>Built by an operator. Backed by a licensed tax practice.</h2>
     <div class="cols">
       <div class="body">
@@ -354,7 +356,7 @@
 
 <section id="contact">
   <div class="wrap">
-    <div class="kicker">Get started</div>
+    <div class="kicker">get_started</div>
     <h2>See your NAV first. Decide about the rest later.</h2>
     <p class="section-lede">Early access to the free NAV tier is opening now. Or skip straight to
     a conversation about your books — if we're not the right fit, we'll say so and point you
