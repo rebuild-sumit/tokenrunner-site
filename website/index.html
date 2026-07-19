@@ -66,6 +66,25 @@
   .lede b { color: var(--ink); }
   .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
   .hero-note { font-family: var(--mono); font-size: 12px; color: var(--ink-soft); margin-top: 18px; }
+  .lede-mobile { display: none; }
+
+  /* mobile fold — hero + CTAs above the fold on a phone (~393×660), statement card peeking */
+  @media (max-width: 480px) {
+    .nav-inner { padding: 12px 16px; }
+    .logo { font-size: 12.5px; }
+    .nav-inner .btn { padding: 9px 13px; font-size: 13.5px; white-space: nowrap; }
+    header { padding: 32px 0 30px; }
+    .hero-cols { gap: 30px; }
+    .eyebrow { font-size: 12.5px; margin-bottom: 12px; }
+    h1 { font-size: 31px; }
+    .lede { font-size: 15.5px; margin: 14px 0 18px; }
+    .lede-desktop { display: none; }
+    .lede-mobile { display: block; }
+    .hero-ctas { flex-direction: column; gap: 10px; }
+    .hero-ctas .btn { text-align: center; }
+    .hero-note { margin-top: 12px; }
+    .statement { padding: 20px; }
+  }
 
   /* NAV statement card */
   .statement { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 26px 28px; box-shadow: 0 1px 2px rgba(11,27,52,.05), 0 12px 32px rgba(11,27,52,.06); }
@@ -171,10 +190,13 @@
     <div>
       <div class="eyebrow">crypto accounting &amp; NAV reporting</div>
       <h1>Your crypto books, from NAV to filed return.</h1>
-      <p class="lede">TokenRunner turns your wallets into financial statements. A live
+      <p class="lede lede-desktop">TokenRunner turns your wallets into financial statements. A live
       <b>net asset value</b> across EVM, Bitcoin, Hyperliquid, and Solana, carried through
       monthly close, gains and losses, and a <b>filed tax return</b>. Built for crypto
       businesses, priced on this page.</p>
+      <p class="lede lede-mobile">Turn your wallets into financial statements. A live
+      <b>net asset value</b> across EVM, Bitcoin, Hyperliquid, and Solana, carried through
+      to a <b>filed tax return</b>.</p>
       <div class="hero-ctas">
         <a class="btn js-waitlist" href="#contact">Get free NAV early access</a>
         <a class="btn ghost js-book" href="#services">Talk to us about your books</a>
